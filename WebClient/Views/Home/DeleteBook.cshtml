@@ -1,0 +1,30 @@
+﻿@model BookModel
+<h4>Delete Book</h4>
+<form asp-action="DeleteBook">
+<input type="hidden"  />
+    <div class="row mb-2 form-group">
+        <div class="col-3">
+            <label asp-for="Title"></label>
+        </div>
+        <div class="col-9">
+            <input class="form-control" type="text" asp-for="Title" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label asp-for="Author"></label>
+        </div>
+        <div class="col-9">
+            <input class="form-control" type="text" asp-for="Author" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label asp-for="Isbn"></label>
+        </div>
+        <div class="col-9">
+            <input class="form-control" type="text" asp-for="Isbn" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
